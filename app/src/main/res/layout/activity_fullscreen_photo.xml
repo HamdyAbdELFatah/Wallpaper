@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.FullScreenPhotoActivity">
+    <ImageView
+        android:id="@+id/activity_fullscreen_photo_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/notfound"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:background="@color/transparent_color"
+        android:padding="8dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/activity_fullscreen_photo_user_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/activity_fullscreen_photo_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_marginLeft="8dp"
+            android:text="Text"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/activity_fullscreen_photo_fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        app:menu_labels_colorNormal="@color/colorAccent"
+        app:menu_labels_colorPressed="@color/colorAccent">
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/activity_fullscreen_photo_fab_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#FFE049"
+
+            android:src="@drawable/favorite"
+            app:fab_size="mini"/>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/activity_fullscreen_photo_fab_wallpaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wallpaper_black_24dp"
+            app:fab_colorNormal="#FFE049"
+            app:fab_size="mini"/>
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>
