@@ -34,4 +34,8 @@ If you want to contribute to this app, you're always welcome!
 
 ## Contact 📩
 Have an project? DM us at 👇
+Drop a mail to:- hamdyabdelfattah14@gmail.com
 
+<br>
+
+<br />
